@@ -15,4 +15,14 @@ def triangle():
         Para las entradas "1", "2" y "5", la salida esperada es:
         Los lados no forman un triangulo valido
     """
-    pass
+
+    numero_1 = float(input())
+    numero_2 = float(input())
+    numero_3 = float(input())
+
+    if (numero_1 + numero_2) > numero_3 and (numero_1 + numero_3) > numero_2 and (numero_3 + numero_2) > numero_1:
+        print("Los lados forman un triangulo valido")
+    elif (numero_1 + numero_2) <= numero_3 or (numero_1 + numero_3) <= numero_2 or (numero_3 + numero_2) <= numero_1:
+        print("Los lados no forman un triangulo valido")
+
+#triangle()
